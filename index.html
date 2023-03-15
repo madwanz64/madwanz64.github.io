@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans';
+        }
+
+        .loader {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #18d26e; /* Blue */
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://readone.my.id">
+    <meta http-equiv="refresh" content="3; url=https://readone.my.id">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" media="screen" rel="stylesheet" type="text/css">
+    <link href="https://readone.my.id/img/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
   </head>
-  <body>
-    <p>Redirecting to <a href="https://readone.my.id">https://readone.my.id</a>...</p>
+  <body style="background-image: url(https://readone.my.id/img/bg.jpg);">
+    <div style="display: flex; flex-direction: column; min-height: 100vh; align-items: center;">
+        <div style=" margin: auto; text-align: center;">
+            <div class="loader" style="margin-left: auto; margin-right: auto; margin-bottom: 10px;"></div>
+            <p style="color: white;font-size: large;">Redirecting to <a href="https://readone.my.id" style="text-decoration: none; color: #18d26e;">readone.my.id</a>...</p>
+        </div>
+    </div>
   </body>
 </html>
